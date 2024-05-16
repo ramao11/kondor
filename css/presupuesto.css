@@ -1,0 +1,35 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "my-nav"
+    "my-main"
+    "my-footer";
+    grid-template-rows: 100px 1fr 100px;
+}
+nav{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+footer{
+    grid-area: my-footer;
+    text-align: center;
+    
+
+}
+main{
+    background-color: purple;
+    color: whitesmoke;
+}
+a{
+    color: black;
+}

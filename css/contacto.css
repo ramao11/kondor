@@ -1,0 +1,50 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "my-nav"
+    "my-main"
+    "my-footer";
+    grid-template-rows: 100px 1fr 100px;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+footer{
+    grid-area: my-footer;
+    text-align: center;
+
+}
+main{
+    margin-top: 100px;
+    margin-left: 100px;
+    align-items: center;
+    background-color: purple;   
+    position: relative; 
+}
+a{
+    color: black;
+}
+.iframe{
+    position: absolute;
+    top: 12%;
+    left: 5%;
+
+}
+p{
+    color: white;
+    padding: 20px;
+    margin-left: 70px;
+}

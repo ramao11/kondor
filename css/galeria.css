@@ -1,0 +1,99 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "my-nav"
+    "my-main"
+    "my-footer";
+    grid-template-rows: 100px 1fr 100px;
+}
+nav{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+
+body{
+    align-items: center;
+    text-align: center;
+    min-width: 100vh;
+    
+}
+.content{
+    position: relative;
+    height: 500px;
+    width: 750px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-left: 100px; 
+    margin-bottom: 50px;   
+}
+.content .imagenes{
+    height: 100%;
+    width: 100%;
+}
+.content .imagenes img{
+    height: 100%;
+    width: 100%;    
+}
+.sliders{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    cursor: pointer;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.1);
+}
+.sliders:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.right{
+    right: 0;
+    width: 30px;
+    height: 20px;
+}
+.left{
+    left: 0;
+    width: 30px;
+    height: 20px;
+}
+.sliders span{
+    color: black;
+    font-size: 35px;
+}
+.btm-slides{
+    position: absolute; /*con el absolute solo se mueve con respecto al padre*/
+    bottom: 20px;
+    left: 45%;
+    display: flex;
+    transform: translateX(-50); /* para mover los botones a la mitad*/
+}
+.btm-slides span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 3px;
+    cursor: pointer;
+}
+footer{
+    grid-area: my-footer;
+    text-align: center;
+    height: 100px;
+
+}
+main{
+    background-color: purple;
+}
+a{
+    color: black;
+}
