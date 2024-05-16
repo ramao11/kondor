@@ -9,27 +9,59 @@ body{
 }
 nav{
     display: flex;
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: 50px;
+    grid-area: my-nav;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+    position: fixed; top: 0; width: 100%;
 }
 
 nav ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
-
 ul a{
     text-decoration: none;
+    padding-left: 50px;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+nav ul li a.active {
+    background-color: #fcfcfc;
+    border-radius: 4px;
 }
 footer{
     grid-area: my-footer;
     text-align: center;
+    margin-top: 0px;
     
 
 }
 main{
+    width: 100%;
+    margin-top: 105px;
+    position: absolute;
     background-color: purple;
     color: whitesmoke;
 }
 a{
     color: black;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+}
+.twitter{
+    width: 50px;
+    height: 50px;
 }
