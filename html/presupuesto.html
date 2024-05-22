@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="shortcut icon" href="../assets/img/container.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/index.html"><img class="navimg" src="/assets/img/kondor_containerspng.png" alt="kondor"></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="galeria.html">GALERIA</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="presupuesto.html">PRESUPUESTO</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <form id="formulario" name="formulario" method="post" action="enviar.php">
+       <fieldset>  
+       <legend>Datos</legend>
+       <br>
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre"><br>
+        </div>
+        <div>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos"><br>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono"><br>
+        </div>
+        <div>
+            <label for="correo">Correo: </label><br>
+            <input type="email" id="correo"><br><br>
+        </div>
+       </fieldset><br>
+
+       <fieldset>
+       <legend>Presupuesto</legend><br>
+       
+        <label for="opciones1">Elige un producto:</label><br>
+            <select name="elige" id="opciones1">
+    <option value="100">Pequeño (100€)</option>
+    <option value="200">Mediano (200€)</option>
+    <option value="300">Grandes (300€)</option>
+            </select> 
+       <div><br>
+
+        <label for="plazo">Plazo en meses:</label><br>
+        <input type="number" id="plazo">
+       </div> <br>
+
+        <label for="opciones2">Extras:</label><br>
+               <select name="elige" id="opciones2">
+                  <option value="25">Rojo</option>
+                  <option value="50">Verde</option>
+                  <option value="75">Morado</option>
+               </select>       
+       <div><br>
+
+        <label for="presupuesto">Presupuesto:</label><br>
+        <input type="text" id="presupuesto" disabled><br><br>
+       </div><br>
+       </fieldset><br>
+       
+
+       <fieldset>
+       <legend>Aceptación de condiciones y presupuesto</legend>
+       <div>
+        <label for="enviar">He leído la política de privacidad</label>
+        <input type="checkbox" name="privacidad" id="privacidad"><br>
+       </div><br>
+        <input type="submit" value="Enviar formulario" id="enviar"><br><br>
+       </fieldset><br>
+       </form>
+    </main>
+        
+    <footer>
+      Todos los derechos reservados 2024.
+      <p>Plaza del Coso S/N, Peñafiel, Valladolid</p>
+      <a href="https://www.instagram.com/"><img src="../assets/img/insta.png" class="insta" alt="instagram"></a>
+      <a href="https://twitter.com/home"><img src="../assets/img/twitter.png" class="twitter" alt="twitter"></a>
+    </footer>
+
+ <script src="../js/presupuesto.js"></script>    
+</body>
+</html>
