@@ -1,0 +1,145 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "my-nav"
+    "my-main"
+    "my-footer";
+    grid-template-rows: 100px 1fr 100px;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    margin-left: 0px;
+    margin-top: 50px;
+    grid-area: my-nav;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+    position: fixed; top: 0; width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+ul a{
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+nav ul li a.active {
+    background-color: #fcfcfc;
+    border-radius: 4px;
+}
+
+
+body{
+    align-items: center;
+    text-align: center;
+    min-width: 100vh;
+    
+}
+.content{
+    position: relative;
+    height: 500px;
+    width: 750px;
+    margin-top: 60px;
+    margin-left: 100px; 
+    margin-bottom: 50px;
+    justify-content: center;
+ 
+}
+.content .imagenes{
+    height: 100%;
+    width: 100%;
+}
+.content .imagenes img{
+    height: 100%;
+    width: 100%;    
+}
+.sliders{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    cursor: pointer;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.1);
+}
+.sliders:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.right{
+    right: 0;
+    width: 30px;
+    height: 20px;
+}
+.left{
+    left: 0;
+    width: 30px;
+    height: 20px;
+}
+.sliders span{
+    color: black;
+    font-size: 35px;
+}
+.btm-slides{
+    position: absolute; /*con el absolute solo se mueve con respecto al padre*/
+    bottom: 20px;
+    left: 45%;
+    display: flex;
+    transform: translateX(-50); /* para mover los botones a la mitad*/
+}
+.btm-slides span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 3px;
+    cursor: pointer;
+}
+footer{
+    grid-area: my-footer;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+}
+main{
+    margin-top: -105px;
+    width: 100%;
+    height: 600px;
+    background-color: purple;
+    position: absolute;
+}
+a{
+    color: black;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+}
+.twitter{
+    width: 50px;
+    height: 50px;
+}
+.navimg{
+    width: 150px;
+    height: 40px;
+    margin-top: 0px;
+
+}
